@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Online Complaint Registration and Management System
 
 ## Overview
@@ -54,4 +53,3 @@ Contains the React.js client-side code, including:
 =======
 # OCRMS
 Online Complaint Registration and Management System: Full-Stack Project
->>>>>>> 65854d6a31c5fb368d46b10cd28ce1bcb52dd48b
