@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 100%;
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navigate p {
+  cursor: pointer;
+}
+
+.container {
+  margin: 10px;
+}
+
+.home-container {
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-side img {
+  width: 120%;
+  height: 70%;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.f-letter {
+  font-size: 3em;
+  color: #ffffff;
+}
+
+.s-letter {
+  font-size: 1.5em;
+  color: #b0bec5;
+}
+
+.t-letter {
+  font-size: 1.2em;
+  color: #90caf9;
+}
+
+.register {
+  border-radius: 30px;
+  background-color: #26a69a;
+  color: #fff;
+  border: none;
+}
+
+.container .form {
+  height: 100%;
+  width: auto;
+}
+
+.data {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+  background-color: #1e1e1e;
+}
+
+.complaint-box {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.compliant-form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: #fff;
+  margin-top: 38px;
+}
+
+.nav-item p {
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+.nav-item p:hover {
+  color: #ff5252;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  gap: 2rem;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-container h1 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.message-window {
+  flex: 1;
+  overflow-x: auto;
+  padding: 10px;
+  width: 100%;
+  max-height: 200px;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.message {
+  background-color: #2a2a2a;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: #1a1a1a;
+}
+
+.input-container textarea {
+  width: 25px;
+  flex: 1;
+  padding: 5px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: #fff;
+}
+
+.input-container button {
+  padding: 5px 10px;
+  color: white;
+  font-size: 12px;
+  border: none;
+  border-radius: 15px;
+  background-color: #26a69a;
+}
+
+.accordian,
+.body {
+  min-height: 70vh;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .chat-container {
+    height: auto;
+  }
+}
+
+/* --- New Home Page Sections --- */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #90caf9;
+}
+
+.section-steps {
+  background-color: #212121;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.step {
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+}
+
+.step h4 {
+  color: #26a69a;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 0.95em;
+  color: #cccccc;
+}
+
+.section-benefits {
+  background-color: #1f1f1f;
+}
+
+.section-benefits ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.section-benefits li {
+  font-size: 1em;
+  margin: 15px 0;
+  color: #eeeeee;
+  padding-left: 20px;
+  position: relative;
+}
+
+.section-benefits li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+}
+/* Hero Section */
+.hero-section {
+  /* background: linear-gradient(to right, #0f0f0f, #1f1f1f); */
+  min-height: 100vh;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Step Cards (How it Works section) */
+.step-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Button Customizations */
+.btn-info {
+  background-color: #0dcaf0 !important;
+  border-color: #0dcaf0 !important;
+  color: #000;
+}
+
+.btn-info:hover {
+  background-color: #31d2f2 !important;
+  border-color: #31d2f2 !important;
+}

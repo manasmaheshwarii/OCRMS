@@ -1,0 +1,15 @@
+{
+  "name": "smartbridge",
+  "version": "1.0.0",
+  "description": "This project is an **Online Complaint Registration and Management System** developed using the **MERN** stack (MongoDB, Express.js, React.js, Node.js) for the **Naan Mudhalvan** initiative. The system allows users to register complaints, track their status, and manage them efficiently. It also incorporates role-based access control to ensure different user roles (like Admin, User, and agent) have appropriate permissions and functionalities.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react-icons": "^5.5.0"
+  }
+}
