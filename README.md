@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Online Complaint Registration and Management System
 
 ## Overview
@@ -139,3 +140,7 @@ Contains the React.js client-side code, including:
 
 ### Complaint Workflow:
 - Complaint registration → Admin assigns to Agent → Agent updates status → User is notified → Admin closes the complaint.
+=======
+# OCRMS
+Online Complaint Registration and Management System: Full-Stack Project
+>>>>>>> 65854d6a31c5fb368d46b10cd28ce1bcb52dd48b
