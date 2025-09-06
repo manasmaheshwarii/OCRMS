@@ -8,14 +8,13 @@ import Collapse from "react-bootstrap/Collapse";
 
 const Status = () => {
   const [toggle, setToggle] = useState({});
-
   const [statusCompliants, setStatusCompliants] = useState([]);
+
   useEffect(() => {
     const user = JSON.parse(localStorage.getItem("user"));
-
     const { _id } = user;
     axios
-      .get(`http://localhost:8000/status/${_id}`)
+      .get(`${process.env.REACT_APP_API_URL}/status/${_id}`)
       .then((res) => {
         setStatusCompliants(res.data);
       })

@@ -30,7 +30,10 @@ const SignUp = () => {
     const updatedUser = { ...user, userType: title };
 
     try {
-      const res = await axios.post("http://localhost:8000/SignUp", updatedUser);
+      const res = await axios.post(
+        `${process.env.REACT_APP_API_URL}/SignUp`,
+        updatedUser
+      );
       alert("Registration successful");
       JSON.stringify(res.data.user);
     } catch (err) {
@@ -94,7 +97,6 @@ const SignUp = () => {
               />
               <label>Full Name</label>
             </div>
-
             <div className="form-floating mb-3">
               <input
                 type="email"
@@ -107,7 +109,6 @@ const SignUp = () => {
               />
               <label>Email</label>
             </div>
-
             <div className="form-floating mb-3">
               <input
                 type="password"
@@ -120,7 +121,6 @@ const SignUp = () => {
               />
               <label>Password</label>
             </div>
-
             <div className="form-floating mb-3">
               <input
                 type="tel"
@@ -133,7 +133,6 @@ const SignUp = () => {
               />
               <label>Mobile Number</label>
             </div>
-
             <div className="mb-4">
               <Dropdown>
                 <Dropdown.Toggle variant="secondary" className="w-100">
@@ -152,23 +151,14 @@ const SignUp = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </div>
-
             <button className="btn btn-outline-light w-100 mt-2" type="submit">
               Register
             </button>
           </form>
-
-          <p className="text-center text-white mt-4 mb-0">
-            Already have an account?{" "}
-            <Link to="/login" className="text-info">
-              Login
-            </Link>
-          </p>
         </div>
       </section>
 
       <Footer />
-
       <style>{`
         .glass-card {
           background: rgba(255, 255, 255, 0.05);

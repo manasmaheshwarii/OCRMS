@@ -1,4 +1,3 @@
-// Login.jsx
 import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -25,7 +24,10 @@ const Login = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:8000/Login", user);
+      const res = await axios.post(
+        `${process.env.REACT_APP_API_URL}/Login`,
+        user
+      );
       toast.success("✅ Successfully logged in!");
       localStorage.setItem("user", JSON.stringify(res.data));
       const { userType } = res.data;
@@ -133,8 +135,6 @@ const Login = () => {
       </section>
 
       <Footer />
-
-      {/* Styling tweaks */}
       <style>{`
         .glass-card {
           background: rgba(255, 255, 255, 0.05);
